@@ -23,7 +23,7 @@ const creators = [
   {
     name: 'Amarae',
     description: 'Musician, songwriter & producer',
-    image: 'https://p16-pu-sign-no.tiktokcdn-eu.com/obj/tos-no1a-p-0037-no/o0OAIlZf1F3EwALjuLCIfhpAAsI9AleBZwhGIF?lk3s=81f88b70&x-expires=1749312000&x-signature=zs3nkrkNNdhuazMbeNpwhqwZ2hg%3D&shp=81f88b70&shcp=-',
+    image:'https://ichef.bbci.co.uk/images/ic/480xn/p0j5q1jb.jpg.webp',
     bg: 'bg-[#e19fb9]/70',
     text: 'text-[#480b0c]',
     desc: 'text-[#692224]'
@@ -82,7 +82,7 @@ const HeroSlider: React.FC = () => {
                 className={
                   `max-w-[346px] w-full h-[500px] rounded-[32px] ` +
                   `bg-white/10 backdrop-blur-md shadow-2xl mx-auto ` +
-                  `flex flex-col justify-end transition-transform duration-300 hover:scale-105 hover:shadow-2xl border border-white/20 overflow-hidden`
+                  `flex flex-col justify-end transition-transform duration-300 hover:scale-106 hover:shadow-2xl border border-none overflow-hidden`
                 }
                 style={{ boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.18)' }}
               >
@@ -90,11 +90,12 @@ const HeroSlider: React.FC = () => {
                   <img
                     src={creator.image}
                     alt={creator.name}
-                    className="w-full h-[420px] object-cover"
+                    className="w-full h-full object-cover"
                   />
+                  <div className="absolute inset-0 bg-black/30" />
                   <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6">
                     <h3 className="text-3xl font-bold text-white drop-shadow-md tracking-tight mb-1">{creator.name}</h3>
-                    <p className="text-lg text-white/90 drop-shadow mb-0">{creator.description}</p>
+                    <p className="text-lg text-white/90 font-bold drop-shadow mb-0">{creator.description}</p>
                   </div>
                 </div>
               </div>

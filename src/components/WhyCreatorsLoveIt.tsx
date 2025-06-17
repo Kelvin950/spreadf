@@ -1,4 +1,5 @@
 import React from 'react';
+import group74 from '../assets/Group 74.svg';
 
 const features = [
   'No complicated setup',
@@ -35,28 +36,11 @@ const WhyCreatorsLoveIt: React.FC = () => {
         </div>
         {/* Right: Image and revenue card */}
         <div className="flex flex-col gap-6 sm:gap-8 items-center">
-          {/* Image card */}
-          <div className="w-[200px] sm:w-[317px] h-[260px] sm:h-[414px] rounded-[12px] sm:rounded-[16px] border-4 border-[#232323] shadow-lg overflow-hidden bg-[#18181b] flex items-center justify-center">
-            <img
-              src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80"
-              alt="Creator"
-              className="w-full h-full object-cover"
-            />
-          </div>
-          {/* Revenue card */}
-          <div className="flex items-center bg-[#18181b] rounded-[12px] sm:rounded-[16px] shadow-md px-4 sm:px-6 py-3 sm:py-4 gap-2 sm:gap-4 w-[220px] sm:w-[333px] border border-[#232323]">
-            <div className="w-12 sm:w-16 h-12 sm:h-16 rounded-[8px] sm:rounded-[10px] bg-[#232323] flex items-center justify-center">
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 16c0-6.627 5.373-12 12-12s12 5.373 12 12-5.373 12-12 12S4 22.627 4 16z" fill="#5a8c4e" />
-                <path d="M10 18c1.333 2 4.667 2 6 0" stroke="#b7e97b" strokeWidth="2" strokeLinecap="round" />
-              </svg>
-            </div>
-            <div className="flex flex-col">
-              <span className="text-base sm:text-lg text-gray-300 font-medium">Total revenue</span>
-              <span className="text-lg sm:text-2xl md:text-3xl font-bold text-white">+ ₵84,990.00</span>
-              <span className="text-xs sm:text-sm text-gray-400">Payout should appear in 24 hrs.</span>
-            </div>
-          </div>
+          <img 
+            src={group74} 
+            alt="Creator Revenue Stats" 
+            className="w-full max-w-[450px] h-auto mx-auto sm:mx-0 sm:ml-12" 
+          />
         </div>
       </div>
     </section>
